@@ -4,7 +4,7 @@ Feature: As a user, I want to see users information in different records and sho
   Scenario: verify default values in Users page
     Given I am on the login page
     And I login as a librarian
-    When I click on "Users" link
+    When I click on "User" link
     Then show records default value should be 10
     And show records should have following options:
       | 5   |
