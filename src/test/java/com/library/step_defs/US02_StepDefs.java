@@ -27,7 +27,7 @@ public class US02_StepDefs {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
     }
 
 
@@ -37,7 +37,7 @@ public class US02_StepDefs {
         LoginPage loginPage = new LoginPage();
         loginPage.loginAsLibrarian();
 
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
 
     }
 
@@ -55,7 +55,7 @@ public class US02_StepDefs {
             usersPage_rp.Books.click();
         }
 
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
 
     }
 
@@ -73,7 +73,7 @@ public class US02_StepDefs {
 
         Assert.assertEquals(expectedOption, defaultOption);
 
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
 
     }
 
