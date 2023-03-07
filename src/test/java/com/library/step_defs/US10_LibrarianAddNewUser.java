@@ -13,6 +13,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,11 +46,14 @@ public class US10_LibrarianAddNewUser {
     @Then("dialog fields must have matching placeholder")
     public void dialog_fields_must_have_matching_placeholder(Map<String, String> expected) {
 
-        Map<String, String> actual = new LinkedHashMap<>();
+        Map<String, String> actual = new HashMap<>();
+
         actual.put("fullname", addUserPageNp.fullName.getAttribute("placeholder"));
         actual.put("email", addUserPageNp.email.getAttribute("placeholder"));
         actual.put("password", addUserPageNp.password.getAttribute("placeholder"));
-        //actual.put("address", addUserPageNp.address.getText());
+        if (addUserPageNp.address.getAttribute("placeholder").isEmpty())
+        actual.put("address", "null");
+
 
         Assert.assertEquals(expected, actual);
 
