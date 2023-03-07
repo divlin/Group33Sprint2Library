@@ -2,7 +2,7 @@ Feature: User valid login
   Agile US: As a user, I should be able to Login with valid credentials.
 
   Scenario Outline: Verify user information email
-    Given I am on the login page
+    Given user is on the login page
     When  I login using "<email>" and "<password>"
     And   I click on Sign in button
     Then  account holder name should be "<name>"
