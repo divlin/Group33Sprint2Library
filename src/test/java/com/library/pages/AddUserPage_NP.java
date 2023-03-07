@@ -3,6 +3,11 @@ package com.library.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
 public class AddUserPage_NP extends BasePage {
 
     //    @FindBy(xpath = "//label[.='Full Name']")
@@ -31,7 +36,8 @@ public class AddUserPage_NP extends BasePage {
 //    public WebElement endDate;
 
     //@FindBy(xpath = "//label[.='Address']")
-    @FindBy(name = "password")
+    @FindBy(id = "address")
     public WebElement address;
+
 
 }
