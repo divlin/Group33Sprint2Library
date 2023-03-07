@@ -1,6 +1,7 @@
 Feature: Login and dashboard page access
   Agile Story: As a librarian, I want to login and access to the dashboard page
 
+  @B28G33-94
   Scenario: Login as librarian 13
     Given Librarian is on the Login page
     When Librarian enter username "librarian13@library"
