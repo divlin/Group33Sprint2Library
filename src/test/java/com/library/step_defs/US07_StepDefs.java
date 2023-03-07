@@ -14,7 +14,7 @@ public class US07_StepDefs {
     MainPage_CG mainPage_cg = new MainPage_CG();
 
 
-    @Given("I am on the login page")
+    @Given("user is on the login page")
     public void i_am_on_the_login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
