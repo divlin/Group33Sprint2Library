@@ -13,4 +13,4 @@ Feature:Librarian add new users dialog
       | fullname | Full Name |
       | email    | Email     |
       | password | Password  |
-#      | address  |           |
+      | address  | null      |
