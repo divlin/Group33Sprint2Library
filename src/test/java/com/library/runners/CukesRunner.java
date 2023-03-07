@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         glue = "com/library/step_defs",
         dryRun = false,
         publish = true,
-        tags = "@B28G33-89"
+        tags = "@user"
 )
 
 
