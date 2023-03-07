@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "@target/rerun.txt",
-        glue = "com/library/step_defs"
+        glue = {"com/library/step_defs",
+                "com/library/failedTestsHooks"}
 
 )
 
