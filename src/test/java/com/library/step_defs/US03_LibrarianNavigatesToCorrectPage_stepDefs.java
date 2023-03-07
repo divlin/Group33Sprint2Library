@@ -4,7 +4,6 @@ import com.library.pages.BooksPage_AZ;
 import com.library.pages.DashBoardPage_AZ;
 import com.library.pages.LoginPage;
 import com.library.pages.UsersPage_AZ;
-import com.library.utilities.BrowserUtils;
 import com.library.utilities.ConfigurationReader;
 import com.library.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -17,7 +16,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LibrarianNavigatesToCorrectPage_stepDefs {
+public class US03_LibrarianNavigatesToCorrectPage_stepDefs {
 
     LoginPage login = new LoginPage();
     DashBoardPage_AZ dashBoardPage = new DashBoardPage_AZ();
