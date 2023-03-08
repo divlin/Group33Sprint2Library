@@ -28,7 +28,7 @@ public class US07_StepDefs {
     @And("I click on Sign in button")
     public void iClickOnSignInButton() {
         mainPage_cg.signInButton.click();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
 
         }
 
