@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class US02_StepDefs {
+public class US05_StepDefs {
 
 
     UsersPage_RP usersPage_rp = new UsersPage_RP();
