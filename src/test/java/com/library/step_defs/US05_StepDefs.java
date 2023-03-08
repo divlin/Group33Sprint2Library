@@ -19,8 +19,7 @@ import java.util.List;
 public class US05_StepDefs {
 
 
-    UsersPage_RP usersPage_rp = new UsersPage_RP();
-
+    private UsersPage_RP usersPage_rp;
 
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
