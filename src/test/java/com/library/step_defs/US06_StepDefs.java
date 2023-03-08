@@ -22,7 +22,7 @@ public class US06_StepDefs {
  LoginPage loginPage = new LoginPage();
 
  UsersPage_SG usersPage_sg = new UsersPage_SG();
- @Given("Librarian is on the login page")
+ @Given("Librarian is on the login page.")
  public void librarianIsOnTheLoginPage() {
   Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
