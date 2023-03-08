@@ -4,6 +4,7 @@ import com.library.pages.BooksPage_AZ;
 import com.library.pages.DashBoardPage_AZ;
 import com.library.pages.LoginPage;
 import com.library.pages.UsersPage_AZ;
+import com.library.utilities.BrowserUtils;
 import com.library.utilities.ConfigurationReader;
 import com.library.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -23,8 +24,6 @@ public class US03_LibrarianNavigatesToCorrectPage_stepDefs {
     UsersPage_AZ usersPage = new UsersPage_AZ();
     BooksPage_AZ booksPage = new BooksPage_AZ();
 
-    @FindBy(css = "html > body > header > nav > div > ul:nth-of-type(1) > li:nth-of-type(3) > a > span:nth-of-type(1)")
-    public WebElement spanBooks;
 
 
     @Given("Librarian is already logged in")
@@ -91,15 +90,18 @@ public class US03_LibrarianNavigatesToCorrectPage_stepDefs {
 
     @When("Librarian clicks log out")
     public void librarian_clicks_log_out() {
-
+        BrowserUtils.sleep(2);
         dashBoardPage.btn_accountName.click();
+        BrowserUtils.sleep(2);
         dashBoardPage.btn_logout.click();
     }
 
     @Then("Librarian should be in the login page")
     public void librarian_should_be_in_the_login_page() {
+        BrowserUtils.sleep(3);
         String expectTitle = "Login - Library";
         String actualTitle = Driver.getDriver().getTitle();
+
         Assert.assertEquals(expectTitle, actualTitle);
     }
 }
