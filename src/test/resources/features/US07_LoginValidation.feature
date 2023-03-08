@@ -8,7 +8,7 @@ Feature: User valid login
     Then  account holder name should be "<name>"
 
 
-  @B28G33-93
+  @B28G33-92
     Examples:
   |email             |password   |name            |
   |student1@library  |libraryUser|Test Student 1  |

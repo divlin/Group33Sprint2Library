@@ -21,14 +21,14 @@ public class US07_StepDefs {
     @When("I login using {string} and {string}")
     public void i_login_using_and(String email, String password) {
         mainPage_cg.inputUsername.sendKeys(email);
-        BrowserUtils.sleep(1);
+        BrowserUtils.sleep(2);
         mainPage_cg.inputPassword.sendKeys(password);
 
     }
     @And("I click on Sign in button")
     public void iClickOnSignInButton() {
         mainPage_cg.signInButton.click();
-        BrowserUtils.sleep(1);
+        BrowserUtils.sleep(2);
 
         }
 
