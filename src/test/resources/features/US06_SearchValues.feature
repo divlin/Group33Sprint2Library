@@ -1,19 +1,17 @@
+@SG
 Feature: Search functionality on the users page
+
 
   Background:
 
-    Given I am on the login page
-
-    And I login as a librarian
-
+    Given Librarian is on the login page
     And I click on "Users" link
-
 
   Scenario: Search accuracy
 
     When I search for "test"
 
-    Then table should contain rows with “tests"
+    Then table should contain rows with "Tests"
 
 
   Scenario: Table columns names
