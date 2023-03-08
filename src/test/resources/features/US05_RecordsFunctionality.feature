@@ -1,6 +1,8 @@
-Feature: As a user, I want to see users information in different records and show records functionality
 
+Feature:Show records functionality
+  Agile Story: I want to see users information in different records.
 
+  @RP
   Scenario: verify default values in Users page
     Given I am on the login page
     And I login as a librarian
