@@ -2,7 +2,7 @@
 Feature:Show records functionality
   Agile Story: I want to see users information in different records.
 
-  @RP
+   @B28G33-97 @RP
   Scenario: verify default values in Users page
     Given I am on the login page
     And I login as a librarian
