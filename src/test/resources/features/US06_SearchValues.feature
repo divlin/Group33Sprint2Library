@@ -1,4 +1,4 @@
-@SG
+
 Feature: Search functionality on the users page
 
 
