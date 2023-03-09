@@ -1,16 +1,12 @@
 Feature: books search
   @MI
   Scenario: Verify book search results
-    Given I am on the login page
-    And I login to application as a student
-    When I navigate to "Books" page
-    And I search for "The Goldfinch"
-    Then books table should contain results matching The Goldfinch
-      | ISBN.    | 387927210592  |
-      | Name     | The Goldfinch |
-
-      | Author   | Donna Tartt   |
-
-      | Category | Drama         |
-
-      | Year     | 2013          |
+    Given  student is already logged in
+    When student navigate to "Books" page
+    And student search for  "Neverland"
+    Then books table should contain results matching Neverland
+      | ISBN    | ggg                  |
+      | Name     | Neverland            |
+      | Author   | Me                   |
+      | Category | Action and Adventure |
+      | Year     | 1983                 |
