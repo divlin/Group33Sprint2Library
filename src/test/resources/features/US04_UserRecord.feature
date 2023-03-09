@@ -1,7 +1,6 @@
 Feature: Selecting Different Numbers of Rows in User Records Table
 
 
-  @wip
 
 
     Scenario:Show records for <10> options
