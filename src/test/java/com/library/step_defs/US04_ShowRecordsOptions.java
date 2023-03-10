@@ -102,6 +102,7 @@ public class US04_UserRecordSteps {
 
 import com.library.pages.LoginPage;
 import com.library.pages.UsersPage_JM;
+import com.library.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -126,12 +127,14 @@ public class US04_ShowRecordsOptions {
     public void librarian_select_show_records(Integer recordsCount) {
         String recordsCountAsString = String.valueOf(recordsCount);
         usersPageJM.showRecords(recordsCountAsString);
+        BrowserUtils.sleep(3);
     }
 
     @Then("show records value needs to be {int}")
     public void show_records_value_needs_to_be(Integer recordsCount) {
         String expectedRecordsCount = String.valueOf(recordsCount);
         Select select = new Select(usersPageJM.showRecords);
+        BrowserUtils.sleep(3);
         String actualRecordsCount = select.getFirstSelectedOption().getText();
         Assert.assertEquals(expectedRecordsCount, actualRecordsCount);
     }
@@ -141,7 +144,9 @@ public class US04_ShowRecordsOptions {
         List<WebElement> records = usersPageJM.records;
         Integer actualTotalRecords = records.size();
 
+
         Assert.assertEquals(expectedTotalRecords, actualTotalRecords);
+        BrowserUtils.sleep(3);
     }
 }
 

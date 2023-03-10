@@ -13,7 +13,7 @@
 Feature:
     User Story4: As a user, I want to select different number of raws to see users records
 
-
+    @B28G33-121
     Scenario Outline: Show records for <count> options
         Given Librarian is already logged in
         And Librarian click on "Users" link
